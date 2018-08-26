@@ -1,21 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Check Data View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="VACheckDataViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzD-PG-oxW">
+                                <rect key="frame" x="0.0" y="233.5" width="375" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数据同步中……" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKq-at-5gD">
+                                        <rect key="frame" x="144.5" y="92" width="87" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="87" id="OkN-AB-aQp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1I-TM-iDc">
+                                        <rect key="frame" x="187.5" y="85" width="0.0" height="30"/>
+                                        <color key="backgroundColor" red="0.51405565104463624" green="0.69695561100241432" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" id="1ce-fK-kkQ"/>
+                                            <constraint firstAttribute="height" constant="30" id="fXW-E0-zBG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="重新加载"/>
+                                        <connections>
+                                            <action selector="loadInitialData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LrA-zX-oX2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.68235294117647061" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Y1I-TM-iDc" firstAttribute="centerX" secondItem="JzD-PG-oxW" secondAttribute="centerX" id="AuN-1W-OhE"/>
+                                    <constraint firstItem="wKq-at-5gD" firstAttribute="centerY" secondItem="JzD-PG-oxW" secondAttribute="centerY" id="fac-yZ-X9f"/>
+                                    <constraint firstItem="Y1I-TM-iDc" firstAttribute="centerY" secondItem="JzD-PG-oxW" secondAttribute="centerY" id="kp6-GA-lGK"/>
+                                    <constraint firstAttribute="height" constant="200" id="vtn-DM-CAX"/>
+                                    <constraint firstItem="wKq-at-5gD" firstAttribute="centerX" secondItem="JzD-PG-oxW" secondAttribute="centerX" id="weA-GL-WMY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.68235294117647061" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JzD-PG-oxW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IsT-2g-Qsd"/>
+                            <constraint firstItem="JzD-PG-oxW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fJv-oy-Rgl"/>
+                            <constraint firstItem="JzD-PG-oxW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jae-G9-4eM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JzD-PG-oxW" secondAttribute="trailing" id="lCM-C5-Mtk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="JzD-PG-oxW" id="eEx-sn-mtM"/>
+                        <outlet property="buttonWidth" destination="1ce-fK-kkQ" id="tGY-qn-HgR"/>
+                        <outlet property="reloadButton" destination="Y1I-TM-iDc" id="XfE-1p-csi"/>
+                        <outlet property="tipLabel" destination="wKq-at-5gD" id="Crs-aA-grW"/>
+                        <outlet property="tipLabelWidth" destination="OkN-AB-aQp" id="4Y3-10-sP0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

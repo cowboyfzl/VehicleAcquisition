@@ -85,9 +85,10 @@
             block(key, object);
         });
     } else {
+        @WeakObj(self)
         [_diskCache objectForKey:key withBlock:^(NSString *key, id<NSCoding> object) {
-            if (object && ![_memoryCache objectForKey:key]) {
-                [_memoryCache setObject:object forKey:key];
+            if (object && ![selfWeak.memoryCache objectForKey:key]) {
+                [selfWeak.memoryCache setObject:object forKey:key];
             }
             block(key, object);
         }];

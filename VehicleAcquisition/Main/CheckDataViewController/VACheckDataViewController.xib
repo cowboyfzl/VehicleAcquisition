@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VACheckDataViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="ZAp-29-dwG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Di4-VK-SCt">
+                    <rect key="frame" x="0.0" y="233.5" width="375" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数据同步中……" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0I-ob-p50">
+                            <rect key="frame" x="144" y="92" width="87" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="87" id="BK8-eU-eDZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aww-4f-8GP">
+                            <rect key="frame" x="187.5" y="85" width="0.0" height="30"/>
+                            <color key="backgroundColor" red="0.51405565099999995" green="0.69695561100000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" id="BC6-gL-xfU"/>
+                                <constraint firstAttribute="height" constant="30" id="gbO-9g-vP0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="重新加载"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.68235294120000001" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="d0I-ob-p50" firstAttribute="centerY" secondItem="Di4-VK-SCt" secondAttribute="centerY" id="9ip-5u-G0Z"/>
+                        <constraint firstAttribute="height" constant="200" id="OPj-wv-Jur"/>
+                        <constraint firstItem="aww-4f-8GP" firstAttribute="centerY" secondItem="Di4-VK-SCt" secondAttribute="centerY" id="Pax-Q4-6VT"/>
+                        <constraint firstItem="aww-4f-8GP" firstAttribute="centerX" secondItem="Di4-VK-SCt" secondAttribute="centerX" id="Rk7-sk-4OM"/>
+                        <constraint firstItem="d0I-ob-p50" firstAttribute="centerX" secondItem="Di4-VK-SCt" secondAttribute="centerX" id="nny-zn-q2X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.68235294117647061" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Di4-VK-SCt" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="4wo-dL-BBl"/>
+                <constraint firstItem="Di4-VK-SCt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="P9i-Od-IID"/>
+                <constraint firstItem="Di4-VK-SCt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dsO-DO-fHq"/>
+                <constraint firstItem="Di4-VK-SCt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fOJ-hd-8ZF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

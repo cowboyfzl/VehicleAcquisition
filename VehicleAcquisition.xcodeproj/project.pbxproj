@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,6 +46,45 @@
 		501DE97421300FCA006019C7 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 501DE96D21300FCA006019C7 /* YYKVStorage.m */; };
 		501DE97521300FCA006019C7 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 501DE96E21300FCA006019C7 /* YYMemoryCache.m */; };
 		501DE97621300FCA006019C7 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 501DE96E21300FCA006019C7 /* YYMemoryCache.m */; };
+		644405DA21312ABF0050AD55 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644405D921312ABF0050AD55 /* BaseViewController.m */; };
+		644405DD21312C090050AD55 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644405DC21312C090050AD55 /* BaseNavigationController.m */; };
+		644405E121312CA10050AD55 /* VACheckDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644405DF21312CA10050AD55 /* VACheckDataViewController.m */; };
+		64440633213142860050AD55 /* AnimationWaveEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444060C213142860050AD55 /* AnimationWaveEnd.m */; };
+		64440634213142860050AD55 /* AnimationBackEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444060F213142860050AD55 /* AnimationBackEnd.m */; };
+		64440635213142860050AD55 /* AnimationTransitionEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440610213142860050AD55 /* AnimationTransitionEnd.m */; };
+		64440636213142860050AD55 /* VCTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440613213142860050AD55 /* VCTransitionDelegate.m */; };
+		64440637213142860050AD55 /* AnimationTiltBegin.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440614213142860050AD55 /* AnimationTiltBegin.m */; };
+		64440638213142860050AD55 /* AnimationBackBegin.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440616213142860050AD55 /* AnimationBackBegin.m */; };
+		64440639213142860050AD55 /* AnimationTildEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440617213142860050AD55 /* AnimationTildEnd.m */; };
+		6444063A213142860050AD55 /* AnimationFadeEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440618213142860050AD55 /* AnimationFadeEnd.m */; };
+		6444063B213142860050AD55 /* AnimationFadeBegin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444061A213142860050AD55 /* AnimationFadeBegin.m */; };
+		6444063C213142860050AD55 /* AnimationScaleBegin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444061B213142860050AD55 /* AnimationScaleBegin.m */; };
+		6444063D213142860050AD55 /* UIViewController+HHTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444061C213142860050AD55 /* UIViewController+HHTransition.m */; };
+		6444063E213142860050AD55 /* VCInteractionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444061D213142860050AD55 /* VCInteractionDelegate.m */; };
+		6444063F213142860050AD55 /* AnimationWaveBegin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444061E213142860050AD55 /* AnimationWaveBegin.m */; };
+		64440640213142860050AD55 /* AnimationErectBegin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444061F213142860050AD55 /* AnimationErectBegin.m */; };
+		64440641213142860050AD55 /* UIView+HHLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440623213142860050AD55 /* UIView+HHLayout.m */; };
+		64440642213142860050AD55 /* AnimationErectEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440624213142860050AD55 /* AnimationErectEnd.m */; };
+		64440643213142860050AD55 /* AnimationTransitionBegin.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440629213142860050AD55 /* AnimationTransitionBegin.m */; };
+		64440644213142860050AD55 /* AnimationScaleEnd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444062A213142860050AD55 /* AnimationScaleEnd.m */; };
+		64440645213142860050AD55 /* QuadrantRecognise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444062D213142860050AD55 /* QuadrantRecognise.m */; };
+		6444064D21314E7B0050AD55 /* VAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444064B21314E7B0050AD55 /* VAHomeViewController.m */; };
+		6444064E21314E7B0050AD55 /* VAHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6444064C21314E7B0050AD55 /* VAHomeViewController.xib */; };
+		6444065221314F8F0050AD55 /* CarInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444065121314F8F0050AD55 /* CarInfoModel.m */; };
+		6444065521314FA00050AD55 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444065421314FA00050AD55 /* CityModel.m */; };
+		644406592131506C0050AD55 /* VCPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 644406582131506C0050AD55 /* VCPasswordViewController.m */; };
+		6444065F213151090050AD55 /* VATool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444065E213151090050AD55 /* VATool.m */; };
+		6444066B2131585B0050AD55 /* HUDTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 644406642131585B0050AD55 /* HUDTipView.m */; };
+		6444066C2131585B0050AD55 /* PassWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 644406662131585B0050AD55 /* PassWordView.m */; };
+		6444066D2131585B0050AD55 /* PassWordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 644406692131585B0050AD55 /* PassWordView.xib */; };
+		6444066E2131585B0050AD55 /* PassWordCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444066A2131585B0050AD55 /* PassWordCollectionViewCell.m */; };
+		64440673213158A40050AD55 /* XHDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64440671213158A40050AD55 /* XHDatePickerView.xib */; };
+		64440674213158A40050AD55 /* XHDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440672213158A40050AD55 /* XHDatePickerView.m */; };
+		64ADA12121322DBF00600563 /* VACheckDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64ADA12021322DBF00600563 /* VACheckDataViewController.xib */; };
+		64ADA12421322EEB00600563 /* VCLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64ADA12321322EEB00600563 /* VCLoginModel.m */; };
+		64ADA128213236D400600563 /* VADataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 64ADA127213236D400600563 /* VADataBase.m */; };
+		64ADA12B2132819B00600563 /* UploadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 64ADA12A2132819B00600563 /* UploadInfo.m */; };
+		64ADA12D2132F90600600563 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64ADA12C2132F90600600563 /* 7.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +183,80 @@
 		501DE96C21300FCA006019C7 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
 		501DE96D21300FCA006019C7 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
 		501DE96E21300FCA006019C7 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		644405D821312ABF0050AD55 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		644405D921312ABF0050AD55 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		644405DB21312C090050AD55 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		644405DC21312C090050AD55 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		644405DE21312CA10050AD55 /* VACheckDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VACheckDataViewController.h; sourceTree = "<group>"; };
+		644405DF21312CA10050AD55 /* VACheckDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VACheckDataViewController.m; sourceTree = "<group>"; };
+		6444060C213142860050AD55 /* AnimationWaveEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationWaveEnd.m; sourceTree = "<group>"; };
+		6444060D213142860050AD55 /* AnimationStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationStyle.h; sourceTree = "<group>"; };
+		6444060E213142860050AD55 /* UIView+HHLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HHLayout.h"; sourceTree = "<group>"; };
+		6444060F213142860050AD55 /* AnimationBackEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationBackEnd.m; sourceTree = "<group>"; };
+		64440610213142860050AD55 /* AnimationTransitionEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTransitionEnd.m; sourceTree = "<group>"; };
+		64440611213142860050AD55 /* QuadrantRecognise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadrantRecognise.h; sourceTree = "<group>"; };
+		64440612213142860050AD55 /* AnimationScaleEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationScaleEnd.h; sourceTree = "<group>"; };
+		64440613213142860050AD55 /* VCTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTransitionDelegate.m; sourceTree = "<group>"; };
+		64440614213142860050AD55 /* AnimationTiltBegin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTiltBegin.m; sourceTree = "<group>"; };
+		64440615213142860050AD55 /* AnimationTransitionBegin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTransitionBegin.h; sourceTree = "<group>"; };
+		64440616213142860050AD55 /* AnimationBackBegin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationBackBegin.m; sourceTree = "<group>"; };
+		64440617213142860050AD55 /* AnimationTildEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTildEnd.m; sourceTree = "<group>"; };
+		64440618213142860050AD55 /* AnimationFadeEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationFadeEnd.m; sourceTree = "<group>"; };
+		64440619213142860050AD55 /* AnimationErectEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationErectEnd.h; sourceTree = "<group>"; };
+		6444061A213142860050AD55 /* AnimationFadeBegin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationFadeBegin.m; sourceTree = "<group>"; };
+		6444061B213142860050AD55 /* AnimationScaleBegin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationScaleBegin.m; sourceTree = "<group>"; };
+		6444061C213142860050AD55 /* UIViewController+HHTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HHTransition.m"; sourceTree = "<group>"; };
+		6444061D213142860050AD55 /* VCInteractionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCInteractionDelegate.m; sourceTree = "<group>"; };
+		6444061E213142860050AD55 /* AnimationWaveBegin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationWaveBegin.m; sourceTree = "<group>"; };
+		6444061F213142860050AD55 /* AnimationErectBegin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationErectBegin.m; sourceTree = "<group>"; };
+		64440620213142860050AD55 /* AnimationWaveEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationWaveEnd.h; sourceTree = "<group>"; };
+		64440621213142860050AD55 /* AnimationTransitionEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTransitionEnd.h; sourceTree = "<group>"; };
+		64440622213142860050AD55 /* AnimationBackEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationBackEnd.h; sourceTree = "<group>"; };
+		64440623213142860050AD55 /* UIView+HHLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HHLayout.m"; sourceTree = "<group>"; };
+		64440624213142860050AD55 /* AnimationErectEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationErectEnd.m; sourceTree = "<group>"; };
+		64440625213142860050AD55 /* AnimationFadeBegin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationFadeBegin.h; sourceTree = "<group>"; };
+		64440626213142860050AD55 /* AnimationFadeEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationFadeEnd.h; sourceTree = "<group>"; };
+		64440627213142860050AD55 /* AnimationTildEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTildEnd.h; sourceTree = "<group>"; };
+		64440628213142860050AD55 /* AnimationBackBegin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationBackBegin.h; sourceTree = "<group>"; };
+		64440629213142860050AD55 /* AnimationTransitionBegin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTransitionBegin.m; sourceTree = "<group>"; };
+		6444062A213142860050AD55 /* AnimationScaleEnd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationScaleEnd.m; sourceTree = "<group>"; };
+		6444062B213142860050AD55 /* VCTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTransitionDelegate.h; sourceTree = "<group>"; };
+		6444062C213142860050AD55 /* AnimationTiltBegin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTiltBegin.h; sourceTree = "<group>"; };
+		6444062D213142860050AD55 /* QuadrantRecognise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadrantRecognise.m; sourceTree = "<group>"; };
+		6444062E213142860050AD55 /* AnimationErectBegin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationErectBegin.h; sourceTree = "<group>"; };
+		6444062F213142860050AD55 /* VCInteractionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCInteractionDelegate.h; sourceTree = "<group>"; };
+		64440630213142860050AD55 /* AnimationWaveBegin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationWaveBegin.h; sourceTree = "<group>"; };
+		64440631213142860050AD55 /* UIViewController+HHTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HHTransition.h"; sourceTree = "<group>"; };
+		64440632213142860050AD55 /* AnimationScaleBegin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationScaleBegin.h; sourceTree = "<group>"; };
+		6444064A21314E7B0050AD55 /* VAHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VAHomeViewController.h; sourceTree = "<group>"; };
+		6444064B21314E7B0050AD55 /* VAHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VAHomeViewController.m; sourceTree = "<group>"; };
+		6444064C21314E7B0050AD55 /* VAHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VAHomeViewController.xib; sourceTree = "<group>"; };
+		6444065021314F8F0050AD55 /* CarInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarInfoModel.h; sourceTree = "<group>"; };
+		6444065121314F8F0050AD55 /* CarInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarInfoModel.m; sourceTree = "<group>"; };
+		6444065321314FA00050AD55 /* CityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		6444065421314FA00050AD55 /* CityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		644406572131506C0050AD55 /* VCPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCPasswordViewController.h; sourceTree = "<group>"; };
+		644406582131506C0050AD55 /* VCPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCPasswordViewController.m; sourceTree = "<group>"; };
+		6444065D213151090050AD55 /* VATool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VATool.h; sourceTree = "<group>"; };
+		6444065E213151090050AD55 /* VATool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VATool.m; sourceTree = "<group>"; };
+		644406632131585B0050AD55 /* HUDTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDTipView.h; sourceTree = "<group>"; };
+		644406642131585B0050AD55 /* HUDTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDTipView.m; sourceTree = "<group>"; };
+		644406662131585B0050AD55 /* PassWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassWordView.m; sourceTree = "<group>"; };
+		644406672131585B0050AD55 /* PassWordCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassWordCollectionViewCell.h; sourceTree = "<group>"; };
+		644406682131585B0050AD55 /* PassWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassWordView.h; sourceTree = "<group>"; };
+		644406692131585B0050AD55 /* PassWordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassWordView.xib; sourceTree = "<group>"; };
+		6444066A2131585B0050AD55 /* PassWordCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassWordCollectionViewCell.m; sourceTree = "<group>"; };
+		64440670213158A40050AD55 /* XHDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDatePickerView.h; sourceTree = "<group>"; };
+		64440671213158A40050AD55 /* XHDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDatePickerView.xib; sourceTree = "<group>"; };
+		64440672213158A40050AD55 /* XHDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDatePickerView.m; sourceTree = "<group>"; };
+		64ADA12021322DBF00600563 /* VACheckDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VACheckDataViewController.xib; sourceTree = "<group>"; };
+		64ADA12221322EEB00600563 /* VCLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCLoginModel.h; sourceTree = "<group>"; };
+		64ADA12321322EEB00600563 /* VCLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCLoginModel.m; sourceTree = "<group>"; };
+		64ADA126213236D400600563 /* VADataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VADataBase.h; sourceTree = "<group>"; };
+		64ADA127213236D400600563 /* VADataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VADataBase.m; sourceTree = "<group>"; };
+		64ADA1292132819B00600563 /* UploadInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadInfo.h; sourceTree = "<group>"; };
+		64ADA12A2132819B00600563 /* UploadInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadInfo.m; sourceTree = "<group>"; };
+		64ADA12C2132F90600600563 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		95AEE332A8EFFCB137E2DED8 /* Pods-VehicleAcquisition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleAcquisition.release.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleAcquisition/Pods-VehicleAcquisition.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,12 +319,15 @@
 		501DE8BD212FFFCD006019C7 /* VehicleAcquisition */ = {
 			isa = PBXGroup;
 			children = (
+				64ADA12C2132F90600600563 /* 7.jpg */,
+				644405D721312AA40050AD55 /* Base */,
+				64440660213157800050AD55 /* CustomKit */,
 				501DE91821300F7D006019C7 /* Category */,
 				501DE91521300F7D006019C7 /* Tool */,
 				501DE91F21300F7E006019C7 /* Vendors */,
 				501DE90721300886006019C7 /* Other */,
 				501DE8FE21300864006019C7 /* Common */,
-				501DE90121300864006019C7 /* Main */,
+				644405D521312A240050AD55 /* Main */,
 				501DE8CC212FFFCE006019C7 /* Info.plist */,
 			);
 			path = VehicleAcquisition;
@@ -238,28 +354,27 @@
 		501DE8FE21300864006019C7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				64ADA12521322F3F00600563 /* FMDBDataBase */,
+				6444064F21314F530050AD55 /* CommonModel */,
 				501DE8FF21300864006019C7 /* Constant.h */,
 				501DE90021300864006019C7 /* PrefixHeader.pch */,
+				6444065D213151090050AD55 /* VATool.h */,
+				6444065E213151090050AD55 /* VATool.m */,
+				64ADA12221322EEB00600563 /* VCLoginModel.h */,
+				64ADA12321322EEB00600563 /* VCLoginModel.m */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		501DE90121300864006019C7 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		501DE90721300886006019C7 /* Other */ = {
 			isa = PBXGroup;
 			children = (
 				501DE90821300886006019C7 /* AppDelegate.h */,
-				501DE90921300886006019C7 /* Assets.xcassets */,
+				501DE90F21300886006019C7 /* AppDelegate.m */,
 				501DE90A21300886006019C7 /* LaunchScreen.storyboard */,
 				501DE90C21300886006019C7 /* Main.storyboard */,
 				501DE90E21300886006019C7 /* main.m */,
-				501DE90F21300886006019C7 /* AppDelegate.m */,
+				501DE90921300886006019C7 /* Assets.xcassets */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -277,11 +392,11 @@
 			isa = PBXGroup;
 			children = (
 				501DE91921300F7D006019C7 /* NSDate+Extension.h */,
-				501DE91A21300F7D006019C7 /* UIView+Extension.h */,
-				501DE91B21300F7D006019C7 /* UIColorCategory.m */,
 				501DE91C21300F7D006019C7 /* NSDate+Extension.m */,
-				501DE91D21300F7D006019C7 /* UIColorCategory.h */,
+				501DE91A21300F7D006019C7 /* UIView+Extension.h */,
 				501DE91E21300F7D006019C7 /* UIView+Extension.m */,
+				501DE91D21300F7D006019C7 /* UIColorCategory.h */,
+				501DE91B21300F7D006019C7 /* UIColorCategory.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -289,6 +404,7 @@
 		501DE91F21300F7E006019C7 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				6444060B213142860050AD55 /* HHTransition */,
 				501DE96621300FCA006019C7 /* YYCache */,
 				501DE92021300F7E006019C7 /* UIKit+AFNetworking */,
 				501DE93521300F7E006019C7 /* AFNetworking */,
@@ -377,6 +493,166 @@
 			path = YYCache;
 			sourceTree = "<group>";
 		};
+		644405D521312A240050AD55 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				644406562131505E0050AD55 /* PasswordViewController */,
+				644405D621312A5F0050AD55 /* CheckDataViewController */,
+				6444064621314CC50050AD55 /* HomeViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		644405D621312A5F0050AD55 /* CheckDataViewController */ = {
+			isa = PBXGroup;
+			children = (
+				644405DE21312CA10050AD55 /* VACheckDataViewController.h */,
+				644405DF21312CA10050AD55 /* VACheckDataViewController.m */,
+				64ADA12021322DBF00600563 /* VACheckDataViewController.xib */,
+			);
+			path = CheckDataViewController;
+			sourceTree = "<group>";
+		};
+		644405D721312AA40050AD55 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				644405DB21312C090050AD55 /* BaseNavigationController.h */,
+				644405DC21312C090050AD55 /* BaseNavigationController.m */,
+				644405D821312ABF0050AD55 /* BaseViewController.h */,
+				644405D921312ABF0050AD55 /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6444060B213142860050AD55 /* HHTransition */ = {
+			isa = PBXGroup;
+			children = (
+				6444060C213142860050AD55 /* AnimationWaveEnd.m */,
+				6444060D213142860050AD55 /* AnimationStyle.h */,
+				6444060E213142860050AD55 /* UIView+HHLayout.h */,
+				6444060F213142860050AD55 /* AnimationBackEnd.m */,
+				64440610213142860050AD55 /* AnimationTransitionEnd.m */,
+				64440611213142860050AD55 /* QuadrantRecognise.h */,
+				64440612213142860050AD55 /* AnimationScaleEnd.h */,
+				64440613213142860050AD55 /* VCTransitionDelegate.m */,
+				64440614213142860050AD55 /* AnimationTiltBegin.m */,
+				64440615213142860050AD55 /* AnimationTransitionBegin.h */,
+				64440616213142860050AD55 /* AnimationBackBegin.m */,
+				64440617213142860050AD55 /* AnimationTildEnd.m */,
+				64440618213142860050AD55 /* AnimationFadeEnd.m */,
+				64440619213142860050AD55 /* AnimationErectEnd.h */,
+				6444061A213142860050AD55 /* AnimationFadeBegin.m */,
+				6444061B213142860050AD55 /* AnimationScaleBegin.m */,
+				6444061C213142860050AD55 /* UIViewController+HHTransition.m */,
+				6444061D213142860050AD55 /* VCInteractionDelegate.m */,
+				6444061E213142860050AD55 /* AnimationWaveBegin.m */,
+				6444061F213142860050AD55 /* AnimationErectBegin.m */,
+				64440620213142860050AD55 /* AnimationWaveEnd.h */,
+				64440621213142860050AD55 /* AnimationTransitionEnd.h */,
+				64440622213142860050AD55 /* AnimationBackEnd.h */,
+				64440623213142860050AD55 /* UIView+HHLayout.m */,
+				64440624213142860050AD55 /* AnimationErectEnd.m */,
+				64440625213142860050AD55 /* AnimationFadeBegin.h */,
+				64440626213142860050AD55 /* AnimationFadeEnd.h */,
+				64440627213142860050AD55 /* AnimationTildEnd.h */,
+				64440628213142860050AD55 /* AnimationBackBegin.h */,
+				64440629213142860050AD55 /* AnimationTransitionBegin.m */,
+				6444062A213142860050AD55 /* AnimationScaleEnd.m */,
+				6444062B213142860050AD55 /* VCTransitionDelegate.h */,
+				6444062C213142860050AD55 /* AnimationTiltBegin.h */,
+				6444062D213142860050AD55 /* QuadrantRecognise.m */,
+				6444062E213142860050AD55 /* AnimationErectBegin.h */,
+				6444062F213142860050AD55 /* VCInteractionDelegate.h */,
+				64440630213142860050AD55 /* AnimationWaveBegin.h */,
+				64440631213142860050AD55 /* UIViewController+HHTransition.h */,
+				64440632213142860050AD55 /* AnimationScaleBegin.h */,
+			);
+			name = HHTransition;
+			path = "../../../Downloads/HHTransition-master/HHTransition";
+			sourceTree = "<group>";
+		};
+		6444064621314CC50050AD55 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6444064A21314E7B0050AD55 /* VAHomeViewController.h */,
+				6444064B21314E7B0050AD55 /* VAHomeViewController.m */,
+				6444064C21314E7B0050AD55 /* VAHomeViewController.xib */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		6444064F21314F530050AD55 /* CommonModel */ = {
+			isa = PBXGroup;
+			children = (
+				6444065021314F8F0050AD55 /* CarInfoModel.h */,
+				6444065121314F8F0050AD55 /* CarInfoModel.m */,
+				6444065321314FA00050AD55 /* CityModel.h */,
+				6444065421314FA00050AD55 /* CityModel.m */,
+				64ADA1292132819B00600563 /* UploadInfo.h */,
+				64ADA12A2132819B00600563 /* UploadInfo.m */,
+			);
+			path = CommonModel;
+			sourceTree = "<group>";
+		};
+		644406562131505E0050AD55 /* PasswordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				644406572131506C0050AD55 /* VCPasswordViewController.h */,
+				644406582131506C0050AD55 /* VCPasswordViewController.m */,
+			);
+			path = PasswordViewController;
+			sourceTree = "<group>";
+		};
+		64440660213157800050AD55 /* CustomKit */ = {
+			isa = PBXGroup;
+			children = (
+				6444066F213158A40050AD55 /* XHDatePicker */,
+				644406622131585B0050AD55 /* HUDTipView */,
+				644406652131585B0050AD55 /* PassWordView */,
+			);
+			path = CustomKit;
+			sourceTree = "<group>";
+		};
+		644406622131585B0050AD55 /* HUDTipView */ = {
+			isa = PBXGroup;
+			children = (
+				644406632131585B0050AD55 /* HUDTipView.h */,
+				644406642131585B0050AD55 /* HUDTipView.m */,
+			);
+			path = HUDTipView;
+			sourceTree = "<group>";
+		};
+		644406652131585B0050AD55 /* PassWordView */ = {
+			isa = PBXGroup;
+			children = (
+				644406682131585B0050AD55 /* PassWordView.h */,
+				644406662131585B0050AD55 /* PassWordView.m */,
+				644406692131585B0050AD55 /* PassWordView.xib */,
+				644406672131585B0050AD55 /* PassWordCollectionViewCell.h */,
+				6444066A2131585B0050AD55 /* PassWordCollectionViewCell.m */,
+			);
+			path = PassWordView;
+			sourceTree = "<group>";
+		};
+		6444066F213158A40050AD55 /* XHDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				64440670213158A40050AD55 /* XHDatePickerView.h */,
+				64440671213158A40050AD55 /* XHDatePickerView.xib */,
+				64440672213158A40050AD55 /* XHDatePickerView.m */,
+			);
+			path = XHDatePicker;
+			sourceTree = "<group>";
+		};
+		64ADA12521322F3F00600563 /* FMDBDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				64ADA126213236D400600563 /* VADataBase.h */,
+				64ADA127213236D400600563 /* VADataBase.m */,
+			);
+			path = FMDBDataBase;
+			sourceTree = "<group>";
+		};
 		F45B64C0DE8A55DCA2138785 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +674,7 @@
 				501DE8B8212FFFCD006019C7 /* Frameworks */,
 				501DE8B9212FFFCD006019C7 /* Resources */,
 				79687C966C61E1EA10FB8DE2 /* [CP] Embed Pods Frameworks */,
+				6FB6088BF6BCE7B93334CD90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -467,7 +744,7 @@
 				};
 			};
 			buildConfigurationList = 501DE8B6212FFFCD006019C7 /* Build configuration list for PBXProject "VehicleAcquisition" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -491,8 +768,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6444066D2131585B0050AD55 /* PassWordView.xib in Resources */,
+				6444064E21314E7B0050AD55 /* VAHomeViewController.xib in Resources */,
 				501DE91221300886006019C7 /* Main.storyboard in Resources */,
+				64ADA12D2132F90600600563 /* 7.jpg in Resources */,
 				501DE91021300886006019C7 /* Assets.xcassets in Resources */,
+				64ADA12121322DBF00600563 /* VACheckDataViewController.xib in Resources */,
+				64440673213158A40050AD55 /* XHDatePickerView.xib in Resources */,
 				501DE91121300886006019C7 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +796,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6FB6088BF6BCE7B93334CD90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VehicleAcquisition/Pods-VehicleAcquisition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		79687C966C61E1EA10FB8DE2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -585,35 +882,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644405DD21312C090050AD55 /* BaseNavigationController.m in Sources */,
 				501DE95321300F7E006019C7 /* UIProgressView+AFNetworking.m in Sources */,
+				644405DA21312ABF0050AD55 /* BaseViewController.m in Sources */,
+				64440644213142860050AD55 /* AnimationScaleEnd.m in Sources */,
+				64440633213142860050AD55 /* AnimationWaveEnd.m in Sources */,
 				501DE95621300F7E006019C7 /* UIImageView+AFNetworking.m in Sources */,
+				644405E121312CA10050AD55 /* VACheckDataViewController.m in Sources */,
 				501DE96021300F7E006019C7 /* AFNetworkReachabilityManager.m in Sources */,
 				501DE95B21300F7E006019C7 /* AFImageDownloader.m in Sources */,
 				501DE95221300F7E006019C7 /* UIView+Extension.m in Sources */,
+				6444063F213142860050AD55 /* AnimationWaveBegin.m in Sources */,
 				501DE96421300F7E006019C7 /* UIImage+CompressImage.m in Sources */,
 				501DE96221300F7E006019C7 /* BANetManagerCache.m in Sources */,
+				6444063C213142860050AD55 /* AnimationScaleBegin.m in Sources */,
+				64440674213158A40050AD55 /* XHDatePickerView.m in Sources */,
+				64440643213142860050AD55 /* AnimationTransitionBegin.m in Sources */,
+				64440634213142860050AD55 /* AnimationBackEnd.m in Sources */,
+				6444063A213142860050AD55 /* AnimationFadeEnd.m in Sources */,
+				6444063B213142860050AD55 /* AnimationFadeBegin.m in Sources */,
 				501DE96321300F7E006019C7 /* BANetManager.m in Sources */,
+				64440645213142860050AD55 /* QuadrantRecognise.m in Sources */,
+				64440639213142860050AD55 /* AnimationTildEnd.m in Sources */,
 				501DE97321300FCA006019C7 /* YYKVStorage.m in Sources */,
+				64440637213142860050AD55 /* AnimationTiltBegin.m in Sources */,
 				501DE95421300F7E006019C7 /* UIRefreshControl+AFNetworking.m in Sources */,
 				501DE97521300FCA006019C7 /* YYMemoryCache.m in Sources */,
+				6444066E2131585B0050AD55 /* PassWordCollectionViewCell.m in Sources */,
+				64440641213142860050AD55 /* UIView+HHLayout.m in Sources */,
 				501DE94F21300F7E006019C7 /* NetworkingTool.m in Sources */,
 				501DE96521300F7E006019C7 /* BADataEntity.m in Sources */,
 				501DE96121300F7E006019C7 /* AFSecurityPolicy.m in Sources */,
+				64440635213142860050AD55 /* AnimationTransitionEnd.m in Sources */,
 				501DE95A21300F7E006019C7 /* AFAutoPurgingImageCache.m in Sources */,
+				64ADA12B2132819B00600563 /* UploadInfo.m in Sources */,
 				501DE95721300F7E006019C7 /* UIButton+AFNetworking.m in Sources */,
 				501DE95821300F7E006019C7 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				644406592131506C0050AD55 /* VCPasswordViewController.m in Sources */,
 				501DE95E21300F7E006019C7 /* AFURLSessionManager.m in Sources */,
+				6444065F213151090050AD55 /* VATool.m in Sources */,
+				64440640213142860050AD55 /* AnimationErectBegin.m in Sources */,
+				64440638213142860050AD55 /* AnimationBackBegin.m in Sources */,
+				6444064D21314E7B0050AD55 /* VAHomeViewController.m in Sources */,
 				501DE95121300F7E006019C7 /* NSDate+Extension.m in Sources */,
 				501DE95921300F7E006019C7 /* UIWebView+AFNetworking.m in Sources */,
 				501DE95F21300F7E006019C7 /* AFURLRequestSerialization.m in Sources */,
 				501DE91421300886006019C7 /* AppDelegate.m in Sources */,
+				6444065221314F8F0050AD55 /* CarInfoModel.m in Sources */,
+				6444063E213142860050AD55 /* VCInteractionDelegate.m in Sources */,
+				6444063D213142860050AD55 /* UIViewController+HHTransition.m in Sources */,
+				64440636213142860050AD55 /* VCTransitionDelegate.m in Sources */,
+				64440642213142860050AD55 /* AnimationErectEnd.m in Sources */,
+				6444065521314FA00050AD55 /* CityModel.m in Sources */,
 				501DE91321300886006019C7 /* main.m in Sources */,
+				6444066B2131585B0050AD55 /* HUDTipView.m in Sources */,
 				501DE95021300F7E006019C7 /* UIColorCategory.m in Sources */,
 				501DE95C21300F7E006019C7 /* AFURLResponseSerialization.m in Sources */,
 				501DE97121300FCA006019C7 /* YYCache.m in Sources */,
 				501DE95D21300F7E006019C7 /* AFHTTPSessionManager.m in Sources */,
+				6444066C2131585B0050AD55 /* PassWordView.m in Sources */,
 				501DE95521300F7E006019C7 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				501DE96F21300FCA006019C7 /* YYDiskCache.m in Sources */,
+				64ADA12421322EEB00600563 /* VCLoginModel.m in Sources */,
+				64ADA128213236D400600563 /* VADataBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,10 +1123,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VehicleAcquisition/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = VehicleAcquisition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xinchao.VehicleAcquisition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -812,10 +1140,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VehicleAcquisition/Common/PrefixHeader.pch";
 				INFOPLIST_FILE = VehicleAcquisition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xinchao.VehicleAcquisition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -829,11 +1154,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BDKEPMWR2;
 				INFOPLIST_FILE = VehicleAcquisitionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xinchao.VehicleAcquisitionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -848,11 +1169,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BDKEPMWR2;
 				INFOPLIST_FILE = VehicleAcquisitionTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xinchao.VehicleAcquisitionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -866,11 +1183,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BDKEPMWR2;
 				INFOPLIST_FILE = VehicleAcquisitionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xinchao.VehicleAcquisitionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -884,11 +1197,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BDKEPMWR2;
 				INFOPLIST_FILE = VehicleAcquisitionUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xinchao.VehicleAcquisitionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

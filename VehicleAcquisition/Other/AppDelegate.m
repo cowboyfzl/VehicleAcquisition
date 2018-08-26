@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "VAHomeViewController.h"
+#import "VACheckDataViewController.h"
+#import "VCPasswordViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,10 +18,47 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self setRootVC];
+    [self setVendors];
     return YES;
 }
 
+- (void)setRootVC {
+    self.window = [[UIWindow alloc]init];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    /// 先检查有无基础数据，没有则加载基础数据。有则判断是否密码登录
+    // 假数据
+    switch ([VCLoginModel sharedLoginModel].isAllBaseData) {
+        case 0:
+        {
+            VACheckDataViewController *checkDataVC = [[VACheckDataViewController alloc]initWithNibName:NSStringFromClass([VACheckDataViewController class]) bundle:nil];
+            [self.window setRootViewController:checkDataVC];
+           
+        }
+            break;
+            
+        case 1:
+        {
+            if ([VCLoginModel sharedLoginModel].login) {
+                VAHomeViewController *homeVC = [[VAHomeViewController alloc]initWithNibName:NSStringFromClass([VAHomeViewController class]) bundle:nil];
+                [self.window setRootViewController:homeVC];
+            } else {
+                VCPasswordViewController *passwordVC = [[VCPasswordViewController alloc]init];
+                [self.window setRootViewController:passwordVC];
+            }
+        }
+            break;
+    }
+    [self.window makeKeyAndVisible];
+}
+
+- (void)setVendors {
+    [IQKeyboardManager sharedManager].enable = YES;
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD setMinimumDismissTimeInterval:2];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

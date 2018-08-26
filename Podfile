@@ -22,4 +22,5 @@ pod 'ReactiveObjC',							'3.1.0'    #响应式框架
 pod 'CocoaLumberjack',						'3.4.2'    #打印
 pod 'pop',									'1.0.10'   #动画
 pod 'Bolts',								'1.9.0'    #异步
+
 end
