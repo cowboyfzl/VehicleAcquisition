@@ -8,6 +8,7 @@
 
 #import "VCPasswordViewController.h"
 #import "VAHomeViewController.h"
+#import "BaseNavigationController.h"
 @interface VCPasswordViewController ()
 @property (nonatomic, strong) PassWordView *passWordView;
 @end
@@ -28,8 +29,10 @@
     @WeakObj(self)
     self.passWordView.viewConfirmBlock=^(NSString *text) {
         if ([text isEqualToString:PASSWORD]) {
+           
             VAHomeViewController *homeVC = [[VAHomeViewController alloc]initWithNibName:NSStringFromClass([VAHomeViewController class]) bundle:nil];
-            [selfWeak hh_presentCircleVC:homeVC point:CGPointMake(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2) completion:nil];
+            BaseNavigationController *baseNavigation = [[BaseNavigationController alloc]initWithRootViewController:homeVC];
+            [selfWeak hh_presentCircleVC:baseNavigation point:CGPointMake(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2) completion:nil];
         } else {
             [HUDTipView HUDTipInitWithTime:TIPTIME withTitle:@"密码错误" withSuccessblock:^{
                 [selfWeak.passWordView clearText];

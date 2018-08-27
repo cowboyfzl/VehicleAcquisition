@@ -29,9 +29,11 @@ static NetworkingTool *_netWork = nil;
 }
 
 - (void)netWorkingConfig {
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"cityData" ofType:@"plist"];
     
     // 设置缓存方式
     [BANetManager sharedBANetManager].timeoutInterval = 10;
+    [BANetManager ba_setValue:@"application/json" forHTTPHeaderKey:@"Content-Type"];
     // 实时监测网络状态
     [self monitorNetworkStatus];
 }

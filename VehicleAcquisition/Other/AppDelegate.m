@@ -16,8 +16,8 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[NetworkingTool shareRequest]netWorkingConfig];
     [self setRootVC];
     [self setVendors];
     return YES;

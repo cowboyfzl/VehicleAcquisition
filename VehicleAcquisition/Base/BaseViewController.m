@@ -38,13 +38,16 @@
         backBtn.backgroundColor = [UIColor clearColor];
         
         [backBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        NSString *imageName = @"common_return_icon";
+        NSString *imageName = @"return_icon";
         backBtn.frame = CGRectMake(0, 0, 30, 40);
         [backBtn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
         backBtn.adjustsImageWhenHighlighted = false;
         backBtn.showsTouchWhenHighlighted = false;
         [backBtn addTarget:self action:@selector(retrunVC) forControlEvents:UIControlEventTouchUpInside];
         //self.navigationItem.leftBarButtonItem = [UIBarButtonItem a]
+        if (@available(iOS 11.0, *))  {
+            
+        }
         UIBarButtonItem *negativeSpacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         negativeSpacer.width = -RETURNSPACER;//ios7以后右边距默认值18px，负数相当于右移，正数左移
         UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:backBtn];

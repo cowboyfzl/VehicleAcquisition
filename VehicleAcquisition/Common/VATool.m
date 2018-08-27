@@ -9,7 +9,7 @@
 #import "VATool.h"
 
 @implementation VATool
-+ (NSMutableArray *)crmToolGetClassPropertListWithClass:(Class )className {
++ (NSMutableArray *)vaToolGetClassPropertListWithClass:(Class )className {
     u_int count;
     objc_property_t *properties  =class_copyPropertyList(className, &count);
     NSMutableArray *propertiesArray = [NSMutableArray arrayWithCapacity:count];
@@ -22,7 +22,7 @@
     return propertiesArray;
 }
 
-+ (void)crmToolClearFile
++ (void)vaToolClearFile
 {
     NSString *cachePath = [NSSearchPathForDirectoriesInDomains (NSCachesDirectory , NSUserDomainMask , YES ) firstObject];
     [self clearCacheWithFilePath:cachePath];
@@ -30,7 +30,7 @@
     [[[SDWebImageManager sharedManager] imageCache] clearDiskOnCompletion:nil];
 }
 
-+ (CGFloat)crmToolReadCacheSize {
++ (CGFloat)vaToolReadCacheSize {
     NSString *cachePath = [NSSearchPathForDirectoriesInDomains (NSCachesDirectory , NSUserDomainMask , YES) firstObject];
     return [self folderSizeAtPath :cachePath];
 }
@@ -81,7 +81,7 @@
     return 0;
 }
 
-+ (void)crmToolMaxStarwordsLengthWithTextField:(UITextField *)textField withMaxSL:(NSInteger )maxSL {
++ (void)vaToolMaxStarwordsLengthWithTextField:(UITextField *)textField withMaxSL:(NSInteger )maxSL {
     NSString *toBeString = textField.text;
     
     //获取高亮部分
@@ -108,7 +108,7 @@
     
 }
 
-+ (void)crmToolMaxStarwordsLengthWithTextView:(UITextView *)textView withMaxSL:(NSInteger )maxSL {
++ (void)vaToolMaxStarwordsLengthWithTextView:(UITextView *)textView withMaxSL:(NSInteger )maxSL {
     NSString *toBeString = textView.text;
     
     //获取高亮部分
@@ -134,7 +134,7 @@
     }
 }
 
-+ (UIViewController *)crmToolGetCurrentVC {
++ (UIViewController *)vaToolGetCurrentVC {
     UIViewController *rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
     UIViewController *currentVC = [VATool getCurrentVCFrom:rootViewController];
     return currentVC;
@@ -163,7 +163,7 @@
     return currentVC;
 }
 
-+ (NSString *)crmToolformateTime:(NSString *)time format:(NSString *)format {
++ (NSString *)vaToolformateTime:(NSString *)time format:(NSString *)format {
     NSTimeInterval tempTime = [time doubleValue];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     NSDate *confromTimesp = [NSDate dateWithTimeIntervalSince1970:tempTime];
@@ -172,7 +172,7 @@
     return confromTimespStr;
 }
 
-+ (NSString *)crmToolConversionIntoATimestampWithString:(NSString *)time frmatterTime:(NSString *)frmatterTime {
++ (NSString *)vaToolConversionIntoATimestampWithString:(NSString *)time frmatterTime:(NSString *)frmatterTime {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateStyle:NSDateFormatterMediumStyle];
     [formatter setTimeStyle:NSDateFormatterShortStyle];
@@ -184,7 +184,7 @@
     return [NSString stringWithFormat:@"%ld", (long)timeSp];
 }
 
-+ (NSString *)crmToolLowercaseSpellingWithChineseCharacters:(NSString *)chinese {
++ (NSString *)vaToolLowercaseSpellingWithChineseCharacters:(NSString *)chinese {
     //转成了可变字符串
     NSMutableString *str = [NSMutableString stringWithString:chinese];
     //先转换为带声调的拼音
@@ -193,5 +193,83 @@
     CFStringTransform((CFMutableStringRef)str, NULL, kCFStringTransformStripDiacritics, NO);
     //返回小写拼音
     return [str lowercaseString];
+}
+
+//保存文件
++ (BOOL)vaToolSaveFile:(NSString *)filePath withData:(NSMutableArray *)arr
+{
+    BOOL ret = YES;
+    ret = [self creatFileWithPath:filePath];
+    if (ret) {
+        ret = [arr writeToFile:filePath atomically:YES];
+        if (!ret) {
+            NSLog(@"%s Failed",__FUNCTION__);
+        }
+    } else {
+        NSLog(@"%s Failed",__FUNCTION__);
+    }
+    return ret;
+}
+
+//创建文件
++ (BOOL)creatFileWithPath:(NSString *)filePath
+{
+    BOOL isSuccess = YES;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL temp = [fileManager fileExistsAtPath:filePath];
+    if (temp) {
+        return YES;
+    }
+    NSError *error;
+    //stringByDeletingLastPathComponent:删除最后一个路径节点
+    NSString *dirPath = [filePath stringByDeletingLastPathComponent];
+    isSuccess = [fileManager createDirectoryAtPath:dirPath withIntermediateDirectories:YES attributes:nil error:&error];
+    if (error) {
+        NSLog(@"creat File Failed. errorInfo:%@",error);
+    }
+    if (!isSuccess) {
+        return isSuccess;
+    }
+    isSuccess = [fileManager createFileAtPath:filePath contents:nil attributes:nil];
+    return isSuccess;
+}
+
++ (NSString *)vaToolConvertToJsonData:(NSDictionary *)dict
+
+{
+//    if (!dict.allValues.count) {
+//        return @"";
+//    }
+    NSError *error;
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:&error];
+    
+    NSString *jsonString;
+    
+    if (!jsonData) {
+        
+        NSLog(@"%@",error);
+        
+    }else{
+        
+        jsonString = [[NSString alloc]initWithData:jsonData encoding:NSUTF8StringEncoding];
+        
+    }
+    
+    NSMutableString *mutStr = [NSMutableString stringWithString:jsonString];
+    
+    NSRange range = {0,jsonString.length};
+    
+    //去掉字符串中的空格
+    
+    [mutStr replaceOccurrencesOfString:@" " withString:@"" options:NSLiteralSearch range:range];
+    
+    NSRange range2 = {0,mutStr.length};
+    
+    //去掉字符串中的换行符
+    
+    [mutStr replaceOccurrencesOfString:@"\n" withString:@"" options:NSLiteralSearch range:range2];
+    
+    return mutStr;
 }
 @end

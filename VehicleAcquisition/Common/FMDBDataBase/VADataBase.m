@@ -69,7 +69,7 @@ static NSString *const UploadInfoName = @"UploadInfo";
     BOOL result = [_db executeUpdate:newPropertyModel];
   
     if (result) {
-        NSLog(@"create table success1");
+        NSLog(@"create table success");
         
     }
     
@@ -133,6 +133,7 @@ static NSString *const UploadInfoName = @"UploadInfo";
 #pragma mark - res转成模型
 - (UploadInfo *)uploadInfoModelWithFMDB:(FMResultSet *)res {
     UploadInfo *model = [[UploadInfo alloc] init];
+    model.id = [res intForColumn:@"id"];
     model.name = [res stringForColumn:@"name"];
     model.address = [res stringForColumn:@"address"];
     model.imageData = [res dataForColumn:@"imageData"];

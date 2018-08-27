@@ -15,19 +15,19 @@
  @param className 类名
  @return 属性列表
  */
-+ (NSMutableArray *)crmToolGetClassPropertListWithClass:(Class )className;
++ (NSMutableArray *)vaToolGetClassPropertListWithClass:(Class )className;
 
 /**
  清除缓存
  */
-+ (void)crmToolClearFile;
++ (void)vaToolClearFile;
 
 /**
  读取缓存大小
  
  @return 返回大小(MB)
  */
-+ (CGFloat )crmToolReadCacheSize;
++ (CGFloat )vaToolReadCacheSize;
 
 /**
  限制输入框最大字数
@@ -35,7 +35,7 @@
  @param textField textField
  @param maxSL 最大字数
  */
-+ (void)crmToolMaxStarwordsLengthWithTextField:(UITextField *)textField withMaxSL:(NSInteger )maxSL;
++ (void)vaToolMaxStarwordsLengthWithTextField:(UITextField *)textField withMaxSL:(NSInteger )maxSL;
 
 
 /**
@@ -44,14 +44,14 @@
  @param textView textView
  @param maxSL 最大字数
  */
-+ (void)crmToolMaxStarwordsLengthWithTextView:(UITextView *)textView withMaxSL:(NSInteger )maxSL;
++ (void)vaToolMaxStarwordsLengthWithTextView:(UITextView *)textView withMaxSL:(NSInteger )maxSL;
 
 /**
  获取当前的VC
  
  @return vc
  */
-+ (UIViewController *)crmToolGetCurrentVC;
++ (UIViewController *)vaToolGetCurrentVC;
 
 /**
  时间戳转换成格式字符串
@@ -60,7 +60,7 @@
  @param format 格式化
  @return 格式化后的字符串
  */
-+ (NSString *)crmToolformateTime:(NSString *)time format:(NSString *)format;
++ (NSString *)vaToolformateTime:(NSString *)time format:(NSString *)format;
 
 /**
  将格式化后的字符串转换成时间戳
@@ -68,7 +68,7 @@
  @param time 时间
  @return 时间戳
  */
-+ (NSString *)crmToolConversionIntoATimestampWithString:(NSString *)time frmatterTime:(NSString *)frmatterTime;
++ (NSString *)vaToolConversionIntoATimestampWithString:(NSString *)time frmatterTime:(NSString *)frmatterTime;
 
 /**
  汉字转拼音
@@ -76,5 +76,22 @@
  @param chinese 中文
  @return 拼音
  */
-+ (NSString *)crmToolLowercaseSpellingWithChineseCharacters:(NSString *)chinese;
++ (NSString *)vaToolLowercaseSpellingWithChineseCharacters:(NSString *)chinese;
+
+/**
+ 保存文件
+
+ @param filePath 全路径
+ @param arr 数组
+ @return 是否成功
+ */
++ (BOOL)vaToolSaveFile:(NSString *)filePath withData:(NSMutableArray *)arr;
+
+/**
+ 字典转json
+
+ @param dict 数据
+ @return json
+ */
++ (NSString *)vaToolConvertToJsonData:(NSDictionary *)dict;
 @end
