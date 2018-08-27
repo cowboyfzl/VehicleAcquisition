@@ -44,4 +44,13 @@
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 /// 密码
 #define PASSWORD @"111111"
+
+#pragma mark - 颜色
+/// 渐变色左
+#define GRADIENTCOLORLEFT [UIColor colorWithHex:0x00daff]
+/// 渐变色右
+#define GRADIENTCOLORRIGHT [UIColor colorWithHex:0x1c95f9]
+/// 边框颜色
+#define BORDERCOLOR [UIColor colorWithHex:0xdddddd]
+
 #endif /* Constant_h */

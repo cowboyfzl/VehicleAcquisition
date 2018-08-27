@@ -272,4 +272,20 @@
     
     return mutStr;
 }
+
++ (NSAttributedString *)vcToolPlaceholderWithText:(NSString *)text {
+    return [[NSAttributedString alloc] initWithString:text attributes:
+            @{NSForegroundColorAttributeName:[UIColor colorWithHex:0xc5c5c5 alpha:1],
+              NSFontAttributeName:[UIFont systemFontOfSize:16]
+              }];
+}
+
++ (CAGradientLayer *)vcToolGradientLayerWithFrame:(CGRect )frame {
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = frame;
+    gradientLayer.colors = @[(id)GRADIENTCOLORLEFT.CGColor, (id)GRADIENTCOLORRIGHT.CGColor];  // 设置渐变颜色
+    gradientLayer.startPoint = CGPointMake(0, 1);
+    gradientLayer.endPoint = CGPointMake(1, 1);
+    return gradientLayer;
+}
 @end

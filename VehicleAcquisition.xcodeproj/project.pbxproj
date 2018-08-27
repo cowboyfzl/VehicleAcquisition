@@ -86,10 +86,10 @@
 		6444066E2131585B0050AD55 /* PassWordCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6444066A2131585B0050AD55 /* PassWordCollectionViewCell.m */; };
 		64440673213158A40050AD55 /* XHDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64440671213158A40050AD55 /* XHDatePickerView.xib */; };
 		64440674213158A40050AD55 /* XHDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64440672213158A40050AD55 /* XHDatePickerView.m */; };
+		645E76B0213445970081ECB4 /* VCPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645E76AF213445970081ECB4 /* VCPasswordViewController.xib */; };
 		64ADA12421322EEB00600563 /* VCLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64ADA12321322EEB00600563 /* VCLoginModel.m */; };
 		64ADA128213236D400600563 /* VADataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 64ADA127213236D400600563 /* VADataBase.m */; };
 		64ADA12B2132819B00600563 /* UploadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 64ADA12A2132819B00600563 /* UploadInfo.m */; };
-		64ADA12D2132F90600600563 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64ADA12C2132F90600600563 /* 7.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,13 +265,13 @@
 		64440670213158A40050AD55 /* XHDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDatePickerView.h; sourceTree = "<group>"; };
 		64440671213158A40050AD55 /* XHDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XHDatePickerView.xib; sourceTree = "<group>"; };
 		64440672213158A40050AD55 /* XHDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDatePickerView.m; sourceTree = "<group>"; };
+		645E76AF213445970081ECB4 /* VCPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VCPasswordViewController.xib; sourceTree = "<group>"; };
 		64ADA12221322EEB00600563 /* VCLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCLoginModel.h; sourceTree = "<group>"; };
 		64ADA12321322EEB00600563 /* VCLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCLoginModel.m; sourceTree = "<group>"; };
 		64ADA126213236D400600563 /* VADataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VADataBase.h; sourceTree = "<group>"; };
 		64ADA127213236D400600563 /* VADataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VADataBase.m; sourceTree = "<group>"; };
 		64ADA1292132819B00600563 /* UploadInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadInfo.h; sourceTree = "<group>"; };
 		64ADA12A2132819B00600563 /* UploadInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadInfo.m; sourceTree = "<group>"; };
-		64ADA12C2132F90600600563 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		95AEE332A8EFFCB137E2DED8 /* Pods-VehicleAcquisition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleAcquisition.release.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleAcquisition/Pods-VehicleAcquisition.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -334,7 +334,6 @@
 		501DE8BD212FFFCD006019C7 /* VehicleAcquisition */ = {
 			isa = PBXGroup;
 			children = (
-				64ADA12C2132F90600600563 /* 7.jpg */,
 				644405D721312AA40050AD55 /* Base */,
 				64440660213157800050AD55 /* CustomKit */,
 				501DE91821300F7D006019C7 /* Category */,
@@ -518,8 +517,9 @@
 		5057EFDD213395E200188DEB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5057EFDE213395E200188DEB /* VCPasswordViewController.m */,
 				5057EFDF213395E200188DEB /* VCPasswordViewController.h */,
+				5057EFDE213395E200188DEB /* VCPasswordViewController.m */,
+				645E76AF213445970081ECB4 /* VCPasswordViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -541,8 +541,8 @@
 		5057EFE32133961A00188DEB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5057EFE42133961A00188DEB /* VAHomeViewController.m */,
 				5057EFE52133961A00188DEB /* VAHomeViewController.h */,
+				5057EFE42133961A00188DEB /* VAHomeViewController.m */,
 				5057EFE62133961A00188DEB /* VAHomeViewController.xib */,
 			);
 			path = ViewController;
@@ -873,8 +873,8 @@
 			files = (
 				5057EFE92133961A00188DEB /* VAHomeViewController.xib in Resources */,
 				6444066D2131585B0050AD55 /* PassWordView.xib in Resources */,
+				645E76B0213445970081ECB4 /* VCPasswordViewController.xib in Resources */,
 				501DE91221300886006019C7 /* Main.storyboard in Resources */,
-				64ADA12D2132F90600600563 /* 7.jpg in Resources */,
 				5057EFF02133964100188DEB /* VACheckDataViewController.xib in Resources */,
 				501DE91021300886006019C7 /* Assets.xcassets in Resources */,
 				64440673213158A40050AD55 /* XHDatePickerView.xib in Resources */,

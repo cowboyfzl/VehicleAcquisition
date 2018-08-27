@@ -10,7 +10,10 @@
 #import "VAHomeViewController.h"
 #import "BaseNavigationController.h"
 @interface VCPasswordViewController ()
-@property (nonatomic, strong) PassWordView *passWordView;
+@property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
+@property (weak, nonatomic) IBOutlet UIView *lineView;
+@property (weak, nonatomic) IBOutlet UITextField *pwTextField;
 @end
 
 @implementation VCPasswordViewController
@@ -20,40 +23,29 @@
     [self loadUI];
 }
 
+#pragma mark - 设置UI
 - (void)loadUI {
-    self.view.backgroundColor = [UIColor whiteColor];
-    [[IQKeyboardManager sharedManager] setEnable:false];
-    self.passWordView = [[PassWordView instance]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - super.topMargin - super.bottomMargin)];
-    _passWordView.titleLabel.text = @"请输入交易密码，用于身份验证";
-    [self.view addSubview:_passWordView];
-    @WeakObj(self)
-    self.passWordView.viewConfirmBlock=^(NSString *text) {
-        if ([text isEqualToString:PASSWORD]) {
-           
-            VAHomeViewController *homeVC = [[VAHomeViewController alloc]initWithNibName:NSStringFromClass([VAHomeViewController class]) bundle:nil];
-            BaseNavigationController *baseNavigation = [[BaseNavigationController alloc]initWithRootViewController:homeVC];
-            [selfWeak hh_presentCircleVC:baseNavigation point:CGPointMake(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2) completion:nil];
-        } else {
-            [HUDTipView HUDTipInitWithTime:TIPTIME withTitle:@"密码错误" withSuccessblock:^{
-                [selfWeak.passWordView clearText];
-            }];
-        }
-    };
+    [_doneButton.layer addSublayer:[VATool vcToolGradientLayerWithFrame:_doneButton.bounds]];
+    _doneButton.layer.cornerRadius = _doneButton.height / 2;
+    _doneButton.layer.masksToBounds = true;
+    
+    _lineView.layer.cornerRadius = _lineView.height / 2;
+    _lineView.layer.borderColor = BORDERCOLOR.CGColor;
+    _lineView.layer.borderWidth = 1;
+    
+    _pwTextField.attributedPlaceholder = [VATool vcToolPlaceholderWithText:@"输入使用口令"];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 点击确定
+- (IBAction)enterTap:(UIButton *)sender {
+    if ([_pwTextField.text isEqualToString:PASSWORD]) {
+        
+        VAHomeViewController *homeVC = [[VAHomeViewController alloc]initWithNibName:NSStringFromClass([VAHomeViewController class]) bundle:nil];
+        [self hh_presentCircleVC:homeVC point:_doneButton.center completion:nil];
+    } else {
+        [HUDTipView HUDTipInitWithTime:TIPTIME withTitle:@"密码错误" withSuccessblock:^{}];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -94,4 +94,20 @@
  @return json
  */
 + (NSString *)vaToolConvertToJsonData:(NSDictionary *)dict;
+
+/**
+ 自定义占位符
+
+ @param text 内容
+ @return 可变字符串
+ */
++ (NSAttributedString *)vcToolPlaceholderWithText:(NSString *)text;
+
+/**
+ 设置渐变色
+
+ @param frame 覆盖尺寸
+ @return 对象
+ */
++ (CAGradientLayer *)vcToolGradientLayerWithFrame:(CGRect )frame;
 @end
